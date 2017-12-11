@@ -1,0 +1,57 @@
+﻿@model C43QLXeKhach.Models.KHAOSAT
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>KHAOSAT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayKS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayKS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NguoiKS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NguoiKS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiaChiKS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChiKS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TiLeDonKhach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TiLeDonKhach)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiaKS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaKS)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaKS }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

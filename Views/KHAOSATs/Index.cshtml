@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Ten nhan vien
+            @*@Html.DisplayNameFor(model => model.NgayKS)*@
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.NguoiKS)*@
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.DiaChiKS)*@
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.TiLeDonKhach)*@
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.GiaKS)*@
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <p>@item</p>
+            @*@Html.DisplayFor(modelItem => item.NgayKS)*@
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.NguoiKS)*@
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.DiaChiKS)*@
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.TiLeDonKhach)*@
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.GiaKS)*@
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.MaKS }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaKS }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaKS })*@
+        </td>
+    </tr>
+}
+
+</table>
